@@ -6,7 +6,7 @@
       </div>
       <ul nz-menu [nzMode]="'inline'" [nzTheme]="'dark'" style="height:100%">
         <li nz-submenu>
-          <span title><i nz-icon type="user"></i>subnav 1</span>
+          <span title><i nz-icon type="user"></i>ng-zorro</span>
           <ul>
             <li nz-menu-item (click)="onClickFun('nz-button')">按钮</li>
             <li nz-menu-item>option2</li>
@@ -15,19 +15,19 @@
           </ul>
         </li>
         <li nz-submenu>
-          <span title><i nz-icon type="laptop"></i>subnav 2</span>
+          <span title><i nz-icon type="laptop"></i>总结</span>
           <ul>
-            <li nz-menu-item>option5</li>
+            <li nz-menu-item  (click)="onClickFun('pointer-events')">html禁用鼠标事件</li>
             <li nz-menu-item>option6</li>
             <li nz-menu-item>option7</li>
             <li nz-menu-item>option8</li>
           </ul>
         </li>
         <li nz-submenu>
-          <span title><i nz-icon type="notification"></i>subnav 3</span>
+          <span title><i nz-icon type="notification"></i>惰性加载</span>
           <ul>
-            <li nz-menu-item>option9</li>
-            <li nz-menu-item>option10</li>
+            <li nz-menu-item (click)="onClickFun('preload-test/test1')">Test1</li>
+            <li nz-menu-item (click)="onClickFun('preload-test/test2')">Test2</li>
             <li nz-menu-item>option11</li>
             <li nz-menu-item>option12</li>
           </ul>

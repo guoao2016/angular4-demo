@@ -6,7 +6,8 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
 
 import { AppComponent } from './app.component';
 import {ContentLayout} from './layout/layout.component';
-import {NzDemoButonComponent} from './nzComponent/nzButton/nz-button.component'
+import {NzDemoButonComponent} from './nzComponent/nzButton/nz-button.component';
+import {PointerEventsComponet} from './otherComponent/pointer-events.component';
 
 import {AppRoutingModule} from './app.routing';
 /** 配置angular i18n */
@@ -15,7 +16,8 @@ import {AppRoutingModule} from './app.routing';
   declarations: [
     AppComponent,
     ContentLayout,
-    NzDemoButonComponent
+    NzDemoButonComponent,
+    PointerEventsComponet
   ],
   imports: [
     BrowserModule,

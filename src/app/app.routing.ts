@@ -3,7 +3,10 @@
  */
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
-import {NzDemoButonComponent} from './nzComponent/nzButton/nz-button.component'
+import {NzDemoButonComponent} from './nzComponent/nzButton/nz-button.component';
+import {PointerEventsComponet} from './otherComponent/pointer-events.component';
+
+
 
 const routes: Routes = [
   {
@@ -15,6 +18,14 @@ const routes: Routes = [
     path: 'nz-button',
     component: NzDemoButonComponent
   },
+  {
+    path: 'pointer-events',
+    component: PointerEventsComponet
+  },
+  {
+    path: 'preload-test',
+    loadChildren: './preloadModule/preload.module#PreloadModule'
+  }
 ]
 
 @NgModule({
